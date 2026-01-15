@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia Park - Work</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+    <div class="flex flex-1 overflow-hidden">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white p-6 shadow-lg flex flex-col justify-between border-r border-gray-200 rounded-tr-lg rounded-br-lg">
+            <div>
+                <!-- Name/Logo Section -->
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold text-gray-800">AliciA pArk</h1>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="space-y-4" id="main-nav">
+                    <a href="index.html" class="block text-gray-600 hover:text-gray-900 font-medium" data-page="home">home</a>
+                    <a href="work.html" class="block text-gray-600 hover:text-gray-900 font-medium" data-page="work">work</a>
+                    <a href="project.html" class="block text-gray-600 hover:text-gray-900 font-medium" data-page="project">project</a>
+                    <a href="education.html" class="block text-gray-600 hover:text-gray-900 font-medium" data-page="education">education</a>
+                    <a href="about.html" class="block text-gray-600 hover:text-gray-900 font-medium" data-page="about me">about me</a>
+                    <a href="https://drive.google.com/file/d/1zxVQwSYdxpnf3-XYnRO_DE9fhQZmGINT/view?usp=sharing" class="block text-gray-600 hover:text-gray-900 font-medium" data-page="resume">resume</a>
+                </nav>
+            </div>
+
+            <!-- Socials Section -->
+            <div class="mt-8">
+                <p class="text-gray-500 text-sm mb-2">socials</p>
+                <nav class="space-y-2">
+                    <a href="https://www.linkedin.com/" target="_blank" class="block text-blue-600 hover:underline font-medium">LinkedIn</a>
+                    <a href="https://github.com/" target="_blank" class="block text-gray-800 hover:underline font-medium">GitHub</a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content Area for Project Page -->
+        <main class="flex-1 p-8 md:p-12 lg:p-16">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-8 text-gray-900">My Project</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">TIW Autonomous Tool Delivery Robot</h3>
+                    <p class="text-md text-gray-600 mb-4"> React, WebSocket/MQTT, Python, REST/JSON, Git</p>
+                    <div class="flex items-center justify-center w-full h-48 bg-gray-100 rounded-md overflow-hidden mb-4 border border-gray-300">
+                        <img src="images/tiw.png" alt="AhnLab Logo" class="object-cover w-full h-full">
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-sm"> - Defined the data contract and API architecture (REST/JSON, WebSocket/MQTT) to ensure reliable real-time
+ingestion of robot telemetry and alerts</p>
+                    <p class="text-gray-700 leading-relaxed text-sm"> - Building the operator-facing React/TypeScript web application to manage delivery jobs and visualize live
+robot status, focusing on user workflows and intuitive design</p>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Team Project Management Web App</h3>
+                    <p class="text-md text-gray-600 mb-4">Python</p>
+                    <div class="flex items-center justify-center w-full h-48 bg-gray-100 rounded-md overflow-hidden mb-4 border border-gray-300">
+                        <img src="images/team_project.png" alt="Hanmac Logo" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-sm"> - Built a full-stack platform for project/resource management with secure authentication</p>
+                    <p class="text-gray-700 leading-relaxed text-sm"> - Created an availability dashboard that aggregates equipment usage 
+                    to surface utilization patterns for timely decisions</p>
+                </div>
+
+                
+                <!-- Project Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Digital Logic Design Projects</h3>
+                    <p class="text-md text-gray-600 mb-4">Verilog, Vivado</p>
+                    <div class="flex items-center justify-center w-full h-48 bg-gray-100 rounded-md overflow-hidden mb-4 border border-gray-300">
+                        <img src="images/digital.png" alt="AhnLab Logo" class="object-cover w-full h-full">
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-sm">- Developed a programmable stopwatch/timer with four operational modes (count-up, count-down, and
+externally loaded values) with display output on seven-segment displays using Xilinx Vivado software and a
+Basys3 FPGA board
+</p>
+<p class="text-gray-700 leading-relaxed text-sm"> - Implemented a 4-bit calculator using both ripple carry adder and carry look-ahead adder architectures,
+comparing their complexity and delay</p>
+                    <p class="text-gray-700 leading-relaxed text-sm"> - Designed and implemented clock-synchronous state machines, a rising edge detector, and a controller for
+time-multiplexed 7-segment display</p>
+                </div>
+
+                <!-- Project Item 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Beat Bop Game</h3>
+                    <p class="text-md text-gray-600 mb-4">C</p>
+                    <div class="flex items-center justify-center w-full h-48 bg-gray-100 rounded-md overflow-hidden mb-4 border border-gray-300">
+                         <img src="images/beatbop.png" alt="Seoul National University Logo" class="object-cover w-full h-full">
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-sm">- Programmed a rhythm game like Guitar Hero where players play the song by pressing the corresponding buttons
+on the screen at the right time</p>
+<p class="text-gray-700 leading-relaxed text-sm"> - Included 2 language options and 10 levels & hardware includes LCD, 4 switches, slidepot, and a headphone jack</p>                
+</div>
+
+                <!-- Project Item 7 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Farming Project</h3>
+                    <p class="text-md text-gray-600 mb-4">Python, Arduino</p>
+                    <div class="flex items-center justify-center w-full h-48 bg-gray-100 rounded-md overflow-hidden mb-4 border border-gray-300">
+                        <img src="images/smartfarm.png" alt="Hanmac Logo" class="object-contain w-full h-full">
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-sm">- Built a smart farm that detects and controls the humidity,
+temperature, and the oxygen level of the plant.</p>
+<p class="text-gray-700 leading-relaxed text-sm">- Used an Arduino and sensors to provide the right supply
+that is needed on the plant.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // JavaScript to highlight the active navigation link
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('#main-nav a');
+            const currentPage = window.location.pathname.split('/').pop();
+
+            navLinks.forEach(link => {
+                // Remove .html from the link href for comparison
+                const linkHref = link.getAttribute('href').split('/').pop();
+                if (linkHref === currentPage) {
+                    link.classList.add('active-link');
+                } else {
+                    link.classList.remove('active-link'); // Ensure other links don't have it
+                }
+            });
+        });
+    </script>
+</body>
+</html>
